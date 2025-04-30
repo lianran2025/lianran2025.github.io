@@ -7,6 +7,32 @@
     font-size: 14px;
   }
 
+  #sea-main-wrapper {
+    padding: 1rem 0.8rem 0;
+  }
+
+  .sea-article-content {
+    padding: 0 0.5rem;
+  }
+
+  .sea-post-list {
+    padding: 0 0.5rem;
+  }
+
+  .sea-post-item {
+    padding: 1rem;
+  }
+
+  .sea-article-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sea-post-meta {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+
   #sea-nav-toggle {
     display: inline-flex;
     justify-content: center;

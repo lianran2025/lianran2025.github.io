@@ -142,6 +142,11 @@
   text-overflow: ellipsis;
 }
 
+/* 在文章正文中隐藏摘要内容 */
+.sea-article-content .sea-post-abstract {
+  display: none;
+}
+
 .sea-post-top-flag {
   font-size: 0.8rem;
   color: var(--sea-color-primary);

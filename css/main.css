@@ -779,6 +779,11 @@ html[theme=dark] .token.inserted {
   text-overflow: ellipsis;
 }
 
+/* 在文章正文中隐藏摘要内容 */
+.sea-article-content .sea-post-abstract {
+  display: none;
+}
+
 .sea-post-top-flag {
   font-size: 0.8rem;
   color: var(--sea-color-primary);
@@ -1291,6 +1296,32 @@ html[theme=dark] .token.inserted {
 
   html {
     font-size: 14px;
+  }
+
+  #sea-main-wrapper {
+    padding: 1rem 0.8rem 0;
+  }
+
+  .sea-article-content {
+    padding: 0 0.5rem;
+  }
+
+  .sea-post-list {
+    padding: 0 0.5rem;
+  }
+
+  .sea-post-item {
+    padding: 1rem;
+  }
+
+  .sea-article-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sea-post-meta {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
   }
 
   #sea-nav-toggle {
