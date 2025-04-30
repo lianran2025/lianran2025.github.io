@@ -13,7 +13,7 @@
     
     
     
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://lianran2025.github.io","author":{"@type":"Person","name":"然然爸","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"name":"然然","description":"记录然然的成长点滴","url":"https://lianran2025.github.io","keywords":"然然, 成长记录"}</script>
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://lianran2025.github.io","author":{"@type":"Person","name":"然然爸","sameAs":["mailto"],"image":"assets/images/avatar.jpg"},"name":"然然","description":"记录然然的成长点滴","url":"https://lianran2025.github.io","keywords":"然然, 成长记录"}</script>
     <meta name="description" content="记录然然的成长点滴">
 <meta property="og:type" content="blog">
 <meta property="og:title" content="然然">
@@ -29,6 +29,8 @@
     
         
     
+    
+        <meta property="og:image" content="https://lianran2025.github.io/assets/images/assets/images/avatar.jpg"/>
     
     
     
@@ -51,6 +53,10 @@
 
 
     
+        
+            
+        
+    
 
 <header id="header" data-behavior="1">
     <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
@@ -68,9 +74,11 @@
             <a
                 class="header-right-picture "
                 href="#about"
-                aria-label="Abre el enlace: /#about"
+                aria-label="Öffne den Link: /#about"
             >
         
+        
+            <img class="header-picture" src="/assets/images/assets/images/avatar.jpg" alt="Bild des Autors"/>
         
         </a>
     
@@ -79,8 +87,26 @@
             <!-- Define author's picture -->
 
 
+
+        
+    
+
 <nav id="sidebar" data-behavior="1">
     <div class="sidebar-container">
+        
+            <div class="sidebar-profile">
+                <a
+                    href="/#about"
+                    aria-label="Lesen Sie mehr über den Autor"
+                >
+                    <img class="sidebar-profile-picture" src="/assets/images/assets/images/avatar.jpg" alt="Bild des Autors"/>
+                </a>
+                <h4 class="sidebar-profile-name">然然爸</h4>
+                
+                    <h5 class="sidebar-profile-bio"><p>author.bio</p>
+</h5>
+                
+            </div>
         
         
             <ul class="sidebar-buttons">
@@ -92,66 +118,10 @@
                             href="/"
                             
                             rel="noopener"
-                            title="Inicio"
+                            title="首页"
                         >
                         <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Inicio</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-categories"
-                            
-                            rel="noopener"
-                            title="Categorías"
-                        >
-                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Categorías</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-tags"
-                            
-                            rel="noopener"
-                            title="Etiquetas"
-                        >
-                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Etiquetas</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/all-archives"
-                            
-                            rel="noopener"
-                            title="Archivos"
-                        >
-                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Archivos</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link open-algolia-search"
-                            href="#search"
-                            
-                            rel="noopener"
-                            title="Buscar"
-                        >
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Buscar</span>
+                        <span class="sidebar-button-desc">首页</span>
                     </a>
             </li>
             
@@ -162,112 +132,16 @@
                             href="#about"
                             
                             rel="noopener"
-                            title="Acerca de"
+                            title="关于然然"
                         >
-                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Acerca de</span>
+                        <i class="sidebar-button-icon fa fa-heart" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">关于然然</span>
                     </a>
             </li>
             
         </ul>
         
             <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://github.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="GitHub"
-                        >
-                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">GitHub</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="http://stackoverflow.com/users"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Stack Overflow"
-                        >
-                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Stack Overflow</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://twitter.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Twitter"
-                        >
-                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Twitter</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://facebook.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Facebook"
-                        >
-                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Facebook</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://plus.google.com/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="Google Plus"
-                        >
-                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Google Plus</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="https://www.linkedin.com/profile/"
-                            
-                                target="_blank"
-                            
-                            rel="noopener"
-                            title="LinkedIn"
-                        >
-                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">LinkedIn</span>
-                    </a>
-            </li>
             
                 <li class="sidebar-button">
                     
@@ -276,28 +150,10 @@
                             href="/mailto"
                             
                             rel="noopener"
-                            title="Correo"
+                            title="联系我"
                         >
                         <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Correo</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a
-                            class="sidebar-button-link "
-                            href="/atom.xml"
-                            
-                            rel="noopener"
-                            title="RSS"
-                        >
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
+                        <span class="sidebar-button-desc">联系我</span>
                     </a>
             </li>
             
@@ -322,7 +178,7 @@
                     
                         <a
                             class="link-unstyled"
-                            href="/posts/undefined.html"
+                            href="/2025/04/30/%E6%94%BE%E5%BF%83%E4%BA%86/"
                             aria-label=": 放心了"
                         >
                             放心了
@@ -344,11 +200,11 @@
                     抽血查甲状腺功能，一切正常，安心
                     
                         <a
-                            href="/posts/undefined.html"
+                            href="/2025/04/30/%E6%94%BE%E5%BF%83%E4%BA%86/"
                             class="postShorten-excerpt_link link"
                             aria-label=": 放心了"
                         >
-                            Seguir leyendo
+                            Weiterlesen
                         </a>
                         
                     
@@ -367,7 +223,7 @@
                     
                         <a
                             class="link-unstyled"
-                            href="/posts/undefined.html"
+                            href="/2025/04/29/%E6%B4%97%E6%BE%A1%E4%BA%86/"
                             aria-label=": 洗澡了"
                         >
                             洗澡了
@@ -389,17 +245,27 @@
                     小然然洗澡，爸妈偷摸吃小烧烤
                     
                         <a
-                            href="/posts/undefined.html"
+                            href="/2025/04/29/%E6%B4%97%E6%BE%A1%E4%BA%86/"
                             class="postShorten-excerpt_link link"
                             aria-label=": 洗澡了"
                         >
-                            Seguir leyendo
+                            Weiterlesen
                         </a>
                         
                     
                 </div>
             
         </div>
+        
+            <a
+                href="/2025/04/29/%E6%B4%97%E6%BE%A1%E4%BA%86/"
+                aria-label=": 洗澡了"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src="https://lianran2025.github.io/2025/04/29/%E6%B4%97%E6%BE%A1%E4%BA%86//assets/images/bath.jpg"/>
+                </div>
+            </a>
+            
         
     </article>
     
@@ -412,7 +278,7 @@
                     
                         <a
                             class="link-unstyled"
-                            href="/posts/undefined.html"
+                            href="/2025/04/11/%E5%AE%89%E7%84%B6%E6%9D%A5%E4%BA%86/"
                             aria-label=": 安然来了"
                         >
                             安然来了
@@ -434,11 +300,11 @@
                     终于等到你
                     
                         <a
-                            href="/posts/undefined.html"
+                            href="/2025/04/11/%E5%AE%89%E7%84%B6%E6%9D%A5%E4%BA%86/"
                             class="postShorten-excerpt_link link"
                             aria-label=": 安然来了"
                         >
-                            Seguir leyendo
+                            Weiterlesen
                         </a>
                         
                     
@@ -452,7 +318,7 @@
     <ul class="pagination">
         
         
-        <li class="pagination-number">página 1 de 1</li>
+        <li class="pagination-number">Seite 1 von 1</li>
     </ul>
 </div>
 
@@ -471,11 +337,17 @@
         
 
 
+    
+        
+    
+
 <div id="about">
     <div id="about-card">
         <div id="about-btn-close">
             <i class="fa fa-times"></i>
         </div>
+        
+            <img id="about-card-picture" src="/assets/images/assets/images/avatar.jpg" alt="Bild des Autors"/>
         
             <h4 id="about-card-name">然然爸</h4>
         
@@ -490,6 +362,12 @@
 
             </div>
         
+        
+            <div id="about-card-location">
+                <i class="fa fa-map-marker-alt"></i>
+                <br/>
+                中国
+            </div>
         
     </div>
 </div>
