@@ -640,6 +640,9 @@ html[theme=dark] .token.inserted {
   margin-top: 1.5rem;
   line-height: 1.8;
   font-size: 1.1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sea-article-title {
@@ -659,6 +662,9 @@ html[theme=dark] .token.inserted {
   row-gap: 0.5rem;
   margin-bottom: 2rem;
   font-size: 0.95rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sea-post-time,
@@ -722,11 +728,14 @@ html[theme=dark] .token.inserted {
 /* 文章列表样式 */
 .sea-post-list {
   margin: 2rem 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sea-post-item {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
   background: var(--sea-color-card);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -738,8 +747,8 @@ html[theme=dark] .token.inserted {
 }
 
 .sea-post-title {
-  margin: 0 0 1rem;
-  font-size: 1.5rem;
+  margin: 0 0 0.8rem;
+  font-size: 1.4rem;
 }
 
 .sea-post-link {
@@ -755,16 +764,16 @@ html[theme=dark] .token.inserted {
 .sea-post-line {
   height: 1px;
   background: var(--sea-color-divider);
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 
 .sea-post-abstract {
   color: var(--sea-color-text-2);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
