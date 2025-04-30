@@ -768,11 +768,15 @@ html[theme=dark] .token.inserted {
 }
 
 .sea-post-abstract {
-  margin-top: 1rem;
-  color: var(--sea-color-text);
+  color: var(--sea-color-text-2);
   font-size: 0.95rem;
   line-height: 1.6;
-  opacity: 0.8;
+  margin-bottom: 0.8rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* 在文章正文中隐藏摘要内容 */
