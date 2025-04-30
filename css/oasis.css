@@ -53,6 +53,13 @@ h1#title::before {
 .avatar-container {
   margin-left: 2em;
 }
+.avatar-link {
+  display: block;
+  transition: all 0.3s ease;
+}
+.avatar-link:hover {
+  transform: scale(1.05);
+}
 .avatar {
   width: 60px;
   height: 60px;
@@ -63,7 +70,6 @@ h1#title::before {
   border: 2px solid rgba(57,72,103,0.1);
 }
 .avatar:hover {
-  transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   border-color: #394867;
 }
