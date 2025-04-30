@@ -206,19 +206,9 @@ aside li {
   padding-inline-start: 1.5em;
 }
 #post img {
-  max-width: 50%;
-  margin: 2em auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   display: block;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-#post img:hover {
+  margin: auto;
   max-width: 100%;
-  transform: scale(1);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  z-index: 1;
 }
 #post table {
   border-collapse: collapse;
@@ -540,32 +530,6 @@ aside li {
   background: #394867;
   color: #fff;
 }
-.post-footer .image-preview-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  z-index: 1000;
-  cursor: zoom-out;
-}
-.post-footer .image-preview-modal img {
-  max-width: 90%;
-  max-height: 90vh;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: none;
-  border-radius: 4px;
-}
-.post-footer .image-preview-modal img:hover {
-  transform: translate(-50%, -50%) scale(1);
-  box-shadow: none;
-}
 #post pre[class*='language-'].line-numbers {
   position: relative;
   padding-left: 3.8em;
@@ -771,4 +735,43 @@ pre[class*='language-'] pre > code.highlight {
   margin-top: 1em;
   color: #e53e3e;
   font-size: 0.9em;
+}
+@media screen and (max-width: 768px) {
+  #content {
+    padding: 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .header-container {
+    padding: 20px 0;
+  }
+  .header-container h1#title {
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .avatar-container .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  #menu-outer {
+    padding: 10px 0;
+    font-size: 0.9em;
+  }
+  #content-outer {
+    padding: 15px 0;
+  }
+  .post-content {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+  }
+  .post-footer {
+    margin-top: 2em;
+    padding: 1em 0;
+  }
 }
