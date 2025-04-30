@@ -206,8 +206,19 @@ aside li {
   padding-inline-start: 1.5em;
 }
 #post img {
+  max-width: 50%;
+  margin: 2em auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
   display: block;
-  margin: auto;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#post img:hover {
+  max-width: 100%;
+  transform: scale(1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  z-index: 1;
 }
 #post table {
   border-collapse: collapse;
@@ -366,11 +377,56 @@ aside li {
 .post-content blockquote p {
   margin: 0.5em 0;
 }
-.post-content img {
-  max-width: 100%;
-  margin: 1.5em 0;
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.post-content img + em {
+  display: block;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  margin: 0.8em auto 2em;
+  font-style: normal;
+  max-width: 80%;
+}
+.post-content .image-container {
+  margin: 2em auto;
+  text-align: center;
+}
+.post-content .image-container img {
+  margin: 0 auto;
+}
+.post-content .image-container .image-caption {
+  margin-top: 0.8em;
+  color: #666;
+  font-size: 0.9em;
+  font-style: normal;
+}
+.post-content .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin: 2em 0;
+}
+.post-content .image-grid img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.post-content .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2em 0;
+}
+.post-content .image-gallery img {
+  flex: 1;
+  min-width: 200px;
+  margin: 0;
+  cursor: pointer;
+}
+.post-content .image-gallery img:hover {
+  transform: scale(1.02);
+  z-index: 1;
 }
 .post-content code {
   font-family: 'Fira Code', monospace;
@@ -421,6 +477,50 @@ aside li {
 .post-content a:hover {
   text-decoration: underline;
 }
+.post-content p:has(img),
+.post-content .post-content img {
+  margin: 2em 0;
+  text-align: center;
+}
+.post-content .post-content img {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  display: block;
+  transition: all 0.3s ease;
+}
+.post-content .post-content img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.post-content p:has(img) + p:has(em),
+.post-content .post-content img + em {
+  margin: 0.8em auto 2em;
+  text-align: center;
+  color: #666;
+  font-size: 0.9em;
+  font-style: normal;
+  max-width: 80%;
+}
+.post-content .image-wrapper {
+  position: relative;
+  margin: 2em auto;
+  max-width: 800px;
+}
+.post-content .image-wrapper img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+.post-content .image-wrapper img:hover {
+  width: 100%;
+  transform: scale(1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  z-index: 1;
+}
 .post-footer {
   margin-top: 3em;
   padding-top: 1.5em;
@@ -439,6 +539,32 @@ aside li {
 .post-footer .back-link:hover {
   background: #394867;
   color: #fff;
+}
+.post-footer .image-preview-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  z-index: 1000;
+  cursor: zoom-out;
+}
+.post-footer .image-preview-modal img {
+  max-width: 90%;
+  max-height: 90vh;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: none;
+  border-radius: 4px;
+}
+.post-footer .image-preview-modal img:hover {
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: none;
 }
 #post pre[class*='language-'].line-numbers {
   position: relative;
