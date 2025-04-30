@@ -1,5 +1,37 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><title>洗澡了 │ 安然一隅</title><link rel="stylesheet" href="/css/oasis.css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="安然一隅" type="application/atom+xml">
-</head><body><div id="content"><div class="header-container"><h1 id="title">洗澡了</h1><div class="avatar-container"><img class="avatar" src="/assets/avatar.jpg" alt="avatar"></div></div><div id="menu-outer"><nav id="menu-inner"><time datetime="2025-04-29T02:55:00.000Z">2025-04-29</time></nav></div><div id="content-outer"><div id="content-inner"><article id="post"><p>安然成长记录</p>
+</head><body><div id="password-container"><div class="password-box"><h2>请输入访问密码</h2><form id="password-form"><input id="password-input" type="password" placeholder="请输入密码" autocomplete="off"><button id="password-submit" type="submit">确认</button></form><p class="error-message" id="password-message"></p></div></div><script>document.addEventListener('DOMContentLoaded', function() {
+  const passwordForm = document.getElementById('password-form');
+  const passwordInput = document.getElementById('password-input');
+  const passwordMessage = document.getElementById('password-message');
+  const content = document.getElementById('content');
+  const passwordContainer = document.getElementById('password-container');
+
+  // 检查是否已经通过验证
+  if (localStorage.getItem('site_authenticated') === 'true') {
+    passwordContainer.style.display = 'none';
+    content.style.display = 'block';
+    return;
+  }
+
+  // 初始隐藏内容
+  content.style.display = 'none';
+  passwordContainer.style.display = 'flex';
+
+  passwordForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const password = passwordInput.value;
+    
+    // 这里设置您的密码
+    if (password === 'lianran-2025') {
+      localStorage.setItem('site_authenticated', 'true');
+      passwordContainer.style.display = 'none';
+      content.style.display = 'block';
+    } else {
+      passwordMessage.textContent = '密码错误，请重试';
+      passwordInput.value = '';
+    }
+  });
+}); </script><div id="content"><div class="header-container"><h1 id="title">洗澡了</h1><div class="avatar-container"><img class="avatar" src="/assets/avatar.jpg" alt="avatar"></div></div><div id="menu-outer"><nav id="menu-inner"><time datetime="2025-04-29T02:55:00.000Z">2025-04-29</time></nav></div><div id="content-outer"><div id="content-inner"><article id="post"><p>安然成长记录</p>
 <ul>
 <li><p>⏰ 时间：2025年4月29日 10:30</p>
 </li>
