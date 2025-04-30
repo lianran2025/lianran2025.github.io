@@ -1231,6 +1231,7 @@ html[theme=dark] .token.inserted {
 
 .sea-hero-info__left {
   flex: 1;
+  text-align: center;
 }
 
 .sea-hero-info__right {
@@ -1248,12 +1249,21 @@ html[theme=dark] .token.inserted {
 
 .sea-hero-name {
   font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .sea-hero-info__intro {
   font-size: 1rem;
   line-height: 1.5rem;
   color: var(--sea-color-text-2);
+  margin-bottom: 1rem;
+}
+
+.sea-hero-info__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .sea-hero-info__link-item {
@@ -1261,7 +1271,7 @@ html[theme=dark] .token.inserted {
   text-decoration-style: dashed;
   text-underline-offset: .4rem;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   transition: all .3s;
   color: var(--sea-color-text-2);
   font-size: 0.875rem;
@@ -1361,7 +1371,9 @@ html[theme=dark] .token.inserted {
   }
 
   .sea-hero-info__right {
-    display: none;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 auto;
   }
 
   .sea-prev-next-wrapper .prev,
