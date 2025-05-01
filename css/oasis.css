@@ -208,7 +208,6 @@ aside li {
 #post img {
   display: block;
   margin: auto;
-  max-width: 100%;
 }
 #post table {
   border-collapse: collapse;
@@ -299,6 +298,8 @@ aside li {
 }
 .post-content p {
   margin: 1.2em 0;
+  line-height: 1.8;
+  color: #2c3e50;
   text-align: justify;
   word-break: break-word;
   letter-spacing: 0.05em;
@@ -511,6 +512,24 @@ aside li {
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .post-content p {
+    font-size: 0.95em;
+    line-height: 1.7;
+    margin: 1em 0;
+  }
+  .post-content .post-image-container {
+    margin: 2em auto;
+    padding: 1em;
+  }
+  .post-content .post-image-container img {
+    max-width: 85%;
+  }
+  .post-content .post-image-container .image-caption {
+    font-size: 0.9em;
+    margin-top: 0.8em;
+  }
+}
 .post-footer {
   margin-top: 3em;
   padding-top: 1.5em;
@@ -529,6 +548,41 @@ aside li {
 .post-footer .back-link:hover {
   background: #394867;
   color: #fff;
+}
+.post-footer p {
+  margin: 1.2em 0;
+  line-height: 1.8;
+  color: #2c3e50;
+  text-align: justify;
+  word-break: break-word;
+  letter-spacing: 0.05em;
+}
+.post-footer .post-image-container {
+  margin: 2.5em auto;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.post-footer .post-image-container img {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+.post-footer .post-image-container img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.post-footer .post-image-container .image-caption {
+  margin-top: 1em;
+  color: #666;
+  font-size: 0.95em;
+  font-style: italic;
+  line-height: 1.6;
 }
 #post pre[class*='language-'].line-numbers {
   position: relative;
