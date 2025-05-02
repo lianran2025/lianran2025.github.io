@@ -671,8 +671,11 @@ aside li {
 }
 @media screen and (max-width: 768px) {
   .post-content .post-content {
-    margin: 1.5em 0;
-    padding: 1.5em;
+    margin: 1em 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
   }
   .post-content .post-content p {
     font-size: 1em;
@@ -684,6 +687,7 @@ aside li {
     padding-top: 1.2em;
     gap: 0.8em;
     flex-wrap: wrap;
+    align-items: center;
   }
   .post-content .post-meta time {
     margin: 0;
@@ -691,34 +695,45 @@ aside li {
     font-size: 0.85em;
     max-width: none;
     width: auto;
+    height: 2em;
+    display: inline-flex;
+    align-items: center;
   }
   .post-content .post-meta .post-tags {
     gap: 0.4em;
     margin: 0;
+    display: flex;
+    align-items: center;
   }
   .post-content .post-meta .post-tags a {
     padding: 0.4em 0.8em;
     font-size: 0.85em;
-    height: auto;
+    height: 2em;
     line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
   }
   .post-content div.post-tags {
     margin-top: 1.5em;
     padding: 0.6em 0;
     gap: 0.4em;
+    display: flex;
+    align-items: center;
   }
   .post-content div.post-tags a {
     padding: 0.4em 0.8em;
     font-size: 0.85em;
-    height: auto;
+    height: 2em;
     line-height: 1.4;
+    display: inline-flex;
+    align-items: center;
   }
   .post-content .post-image-container {
     margin: 1.5em auto;
-    padding: 1em;
+    padding: 0;
   }
   .post-content .post-image-container img {
-    max-width: 85%;
+    max-width: 100%;
   }
   .post-content .post-image-container .image-caption {
     font-size: 0.85em;
