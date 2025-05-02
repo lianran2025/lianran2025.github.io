@@ -671,7 +671,7 @@ aside li {
 }
 @media screen and (max-width: 768px) {
   .post-content .post-content {
-    margin: 1em 0.5em;
+    margin: 0.5em 0.5em;
     padding: 1.2em;
     background: linear-gradient(145deg, #fff, #f8f9fa);
     border-radius: 12px;
@@ -682,6 +682,9 @@ aside li {
     font-size: 1em;
     line-height: 1.8;
     margin: 1.2em 0;
+  }
+  .post-content .post-content p:first-child {
+    margin-top: 0.5em;
   }
   .post-content .post-meta {
     margin-top: 1.5em;
