@@ -670,25 +670,26 @@ aside li {
   z-index: 1;
 }
 @media screen and (max-width: 768px) {
-  .post-content .post-content {
-    margin: 0.3em 0.5em;
-    padding: 1em;
+  .post-content article#post .post-content {
+    margin: 0.2em 0.5em !important;
+    padding: 0.8em !important;
     background: linear-gradient(145deg, #fff, #f8f9fa);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border: 1px solid rgba(57,72,103,0.08);
   }
-  .post-content .post-content p {
+  .post-content article#post .post-content p {
     font-size: 1em;
     line-height: 1.8;
-    margin: 1em 0;
+    margin: 0.8em 0 !important;
   }
-  .post-content .post-content p:first-child {
-    margin-top: 0.3em;
+  .post-content article#post .post-content p:first-child {
+    margin-top: 0.2em !important;
+    margin-bottom: 0.8em !important;
   }
   .post-content .post-meta {
-    margin-top: 1.2em;
-    padding-top: 1em;
+    margin-top: 1em !important;
+    padding-top: 0.8em !important;
     gap: 0.8em;
     flex-wrap: wrap;
     align-items: center;
