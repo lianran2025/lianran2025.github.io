@@ -204,48 +204,8 @@ aside li {
   color: #1a202c;
   position: relative;
 }
-#post time {
-  display: block;
-  margin: 0 0 1.5em;
-  padding: 0.5em 0.8em;
-  background: linear-gradient(145deg, #f8f9fa, #fff);
-  color: #718096;
-  font-size: 0.85em;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  border-radius: 6px;
-  max-width: 180px;
-  text-align: center;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-#post time::before {
-  content: '📅';
-  margin-right: 0.4em;
-  font-size: 1em;
-}
-#post time::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, #394867, transparent);
-  opacity: 0.3;
-}
-#post time:hover {
-  transform: translateX(3px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
-  background: linear-gradient(145deg, #fff, #f8f9fa);
-}
-#post time:hover::after {
-  opacity: 0.5;
-}
 #post .post-content {
-  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 2em;
   background: linear-gradient(145deg, #fff, #f8f9fa);
   border-radius: 12px;
@@ -265,6 +225,85 @@ aside li {
 }
 #post .post-content p:last-child {
   margin-bottom: 0;
+}
+#post .post-content .post-meta {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+  padding-top: 1.5em;
+  border-top: 1px solid rgba(57,72,103,0.1);
+}
+#post .post-content .post-meta time {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4em 0.8em;
+  background: linear-gradient(145deg, #f8f9fa, #fff);
+  color: #718096;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+#post .post-content .post-meta time::before {
+  content: '📅';
+  margin-right: 0.4em;
+  font-size: 1em;
+}
+#post .post-content .post-meta time::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #394867, transparent);
+  opacity: 0.3;
+}
+#post .post-content .post-meta time:hover {
+  transform: translateX(3px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #fff, #f8f9fa);
+}
+#post .post-content .post-meta time:hover::after {
+  opacity: 0.5;
+}
+#post .post-content .post-meta .post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+}
+#post .post-content .post-meta .post-tags a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4em 0.8em;
+  color: #718096;
+  background: linear-gradient(145deg, #f8f9fa, #fff);
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(57,72,103,0.1);
+  line-height: 1.4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+#post .post-content .post-meta .post-tags a::before {
+  content: '#';
+  margin-right: 0.2em;
+  color: #394867;
+}
+#post .post-content .post-meta .post-tags a:hover {
+  transform: translateX(3px);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #fff, #f8f9fa);
+  color: #394867;
 }
 #post p {
   text-align: justify;
@@ -375,8 +414,6 @@ aside li {
 #post div.post-tags {
   margin-top: 2em;
   padding: 0.8em 0;
-  border-top: 1px solid rgba(57,72,103,0.1);
-  border-bottom: 1px solid rgba(57,72,103,0.1);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
