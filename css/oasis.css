@@ -671,8 +671,8 @@ aside li {
 }
 @media screen and (max-width: 768px) {
   .post-content .post-content {
-    margin: 0.5em 0.5em;
-    padding: 1.2em;
+    margin: 0.3em 0.5em;
+    padding: 1em;
     background: linear-gradient(145deg, #fff, #f8f9fa);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
@@ -681,14 +681,14 @@ aside li {
   .post-content .post-content p {
     font-size: 1em;
     line-height: 1.8;
-    margin: 1.2em 0;
+    margin: 1em 0;
   }
   .post-content .post-content p:first-child {
-    margin-top: 0.5em;
+    margin-top: 0.3em;
   }
   .post-content .post-meta {
-    margin-top: 1.5em;
-    padding-top: 1.2em;
+    margin-top: 1.2em;
+    padding-top: 1em;
     gap: 0.8em;
     flex-wrap: wrap;
     align-items: center;
