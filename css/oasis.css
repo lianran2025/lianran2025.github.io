@@ -671,11 +671,12 @@ aside li {
 }
 @media screen and (max-width: 768px) {
   .post-content .post-content {
-    margin: 1em 0;
-    padding: 0;
-    background: none;
-    box-shadow: none;
-    border: none;
+    margin: 1em 0.5em;
+    padding: 1.2em;
+    background: linear-gradient(145deg, #fff, #f8f9fa);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(57,72,103,0.08);
   }
   .post-content .post-content p {
     font-size: 1em;
