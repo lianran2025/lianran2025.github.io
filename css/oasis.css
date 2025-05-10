@@ -1045,7 +1045,7 @@ pre[class*='language-'] pre > code.highlight {
     font-size: 0.9em;
   }
   #content-outer {
-    padding: 15px 0;
+    padding: 0 0 0 0;
   }
   .post-content {
     font-size: 14px;
@@ -1060,6 +1060,9 @@ pre[class*='language-'] pre > code.highlight {
   .post-footer {
     margin-top: 2em;
     padding: 1em 0;
+  }
+  .menu-outer-responsive {
+    display: none !important;
   }
 }
 .tag-list {
