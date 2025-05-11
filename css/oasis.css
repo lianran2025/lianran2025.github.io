@@ -1062,13 +1062,35 @@ pre[class*='language-'] pre > code.highlight {
   font-size: 0.9em;
 }
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    margin-top: 0.5em !important;
+    padding-top: 0.5em !important;
+  }
   #content {
-    padding: 0 15px;
+    padding-top: 0.5em !important;
+    margin-top: 0.5em !important;
+  }
+  .header-container {
+    padding-top: 0.5em !important;
+    margin-top: 0.5em !important;
+  }
+  .header-left {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  h1#title {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+  #content {
+    padding: 0.5em 0.8em 0 0.8em;
     width: 100%;
     box-sizing: border-box;
   }
   .header-container {
-    padding: 20px 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .header-container h1#title {
     font-size: 1.5em;
