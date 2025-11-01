@@ -587,6 +587,31 @@ aside li {
   font-style: normal;
   max-width: 80%;
 }
+.post-content video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 2em auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #000;
+  outline: none;
+}
+.post-content .video-container {
+  margin: 2em auto;
+  text-align: center;
+  max-width: 100%;
+}
+.post-content .video-container video {
+  margin: 0 auto;
+}
+.post-content .video-container .video-caption {
+  margin-top: 0.8em;
+  color: #666;
+  font-size: 0.9em;
+  font-style: normal;
+}
 .post-content .image-container {
   margin: 2em auto;
   text-align: center;
