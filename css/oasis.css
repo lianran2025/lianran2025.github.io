@@ -179,6 +179,8 @@ div#content-outer div#content-inner div#paginator span {
   transition: all 0.3s ease;
   cursor: pointer;
   border: 1px solid rgba(57,72,103,0.08);
+  opacity: 1;
+  transform: translateY(0);
 }
 #recent-posts .post-item:hover {
   transform: translateY(-3px);
@@ -242,6 +244,93 @@ div#content-outer div#content-inner div#paginator span {
 #recent-posts .post-item .post-tags a.post-tag:hover,
 #recent-posts .post-item .post-tags a.post-tag-link:hover {
   background: rgba(57,72,103,0.12);
+  color: #394867;
+}
+#post-filters {
+  margin-bottom: 2em;
+  padding: 1.5em;
+  background: linear-gradient(145deg, #fff, #f8f9fa);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border: 1px solid rgba(57,72,103,0.08);
+}
+#post-filters .filter-group {
+  margin-bottom: 1.2em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+#post-filters .filter-group:last-of-type {
+  margin-bottom: 0;
+}
+#post-filters .filter-label {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #394867;
+  margin: 0;
+  white-space: nowrap;
+}
+#post-filters .filter-input {
+  padding: 0.5em 0.8em;
+  border: 1px solid rgba(57,72,103,0.2);
+  border-radius: 6px;
+  font-size: 0.9em;
+  color: #4a5568;
+  background: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+#post-filters .filter-input:focus {
+  outline: none;
+  border-color: #394867;
+  box-shadow: 0 0 0 3px rgba(57,72,103,0.1);
+}
+#post-filters .tag-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+#post-filters .filter-tag {
+  padding: 0.4em 0.9em;
+  border: 1px solid rgba(57,72,103,0.2);
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #718096;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+#post-filters .filter-tag:hover {
+  background: rgba(57,72,103,0.05);
+  border-color: rgba(57,72,103,0.3);
+  color: #394867;
+}
+#post-filters .filter-tag.active {
+  background: #394867;
+  color: #fff;
+  border-color: #394867;
+}
+#post-filters .filter-tag.active:hover {
+  background: #364462;
+}
+#post-filters .clear-btn {
+  margin-top: 1em;
+  padding: 0.5em 1.2em;
+  border: 1px solid rgba(57,72,103,0.3);
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #718096;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#post-filters .clear-btn:hover {
+  background: rgba(57,72,103,0.05);
+  border-color: #394867;
   color: #394867;
 }
 div#bottom-inner {
@@ -1184,8 +1273,41 @@ pre[class*='language-'] pre > code.highlight {
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
+  }
+  #menu-outer nav#menu-inner span.subtitle-en {
+    text-align: left;
+    margin-left: 0;
+  }
+  #post-filters {
+    padding: 1em;
+    margin-bottom: 1.5em;
+  }
+  #post-filters .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+    margin-bottom: 1em;
+  }
+  #post-filters .filter-label {
+    font-size: 0.9em;
+  }
+  #post-filters .filter-input {
+    width: 100%;
+    max-width: 200px;
+  }
+  #post-filters .tag-filters {
+    width: 100%;
+  }
+  #post-filters .filter-tag {
+    font-size: 0.85em;
+    padding: 0.35em 0.7em;
+  }
+  #post-filters .clear-btn {
+    width: 100%;
+    margin-top: 0.8em;
   }
   #recent-posts .post-item .post-meta-info {
     gap: 0.4em;
