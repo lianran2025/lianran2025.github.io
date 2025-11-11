@@ -190,6 +190,15 @@ div#content-outer div#content-inner div#paginator span {
   color: inherit;
   display: block;
 }
+#recent-posts .post-item .post-content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+#recent-posts .post-item .post-text-content {
+  flex: 1;
+  min-width: 0;
+}
 #recent-posts .post-item .post-title {
   margin: 0 0 0.8em;
   font-size: 1.3em;
@@ -203,6 +212,48 @@ div#content-outer div#content-inner div#paginator span {
   font-size: 0.95em;
   line-height: 1.7;
   max-width: 600px;
+}
+#recent-posts .post-item .post-thumbnail {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(57,72,103,0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+#recent-posts .post-item .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+#recent-posts .post-item .post-thumbnail .video-badge {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0,0,0,0.7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+#recent-posts .post-item .post-thumbnail .video-badge svg {
+  width: 18px;
+  height: 18px;
+}
+#recent-posts .post-item .post-thumbnail:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+#recent-posts .post-item .post-thumbnail:hover img {
+  transform: scale(1.05);
 }
 #recent-posts .post-item .post-meta-info {
   display: flex;
@@ -1207,6 +1258,23 @@ pre[class*='language-'] pre > code.highlight {
   #recent-posts .post-item .post-tags a.post-tag-link {
     font-size: 0.85em;
     padding: 0.25em 0.6em;
+  }
+  #recent-posts .post-item .post-content-wrapper {
+    flex-direction: column;
+    gap: 1em;
+  }
+  #recent-posts .post-item .post-thumbnail {
+    width: 100%;
+    height: 200px;
+    align-self: center;
+  }
+  #recent-posts .post-item .post-thumbnail .video-badge {
+    width: 40px;
+    height: 40px;
+  }
+  #recent-posts .post-item .post-thumbnail .video-badge svg {
+    width: 22px;
+    height: 22px;
   }
   .avatar-container {
     margin-left: 0;
