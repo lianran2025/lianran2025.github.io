@@ -111,7 +111,8 @@ h1#title::before {
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   text-align: left;
 }
 #menu-outer nav#menu-inner a,
@@ -122,6 +123,16 @@ h1#title::before {
 #menu-outer nav#menu-inner span {
   color: #6b7280;
   text-decoration: none;
+}
+#menu-outer nav#menu-inner span.subtitle-en {
+  display: block;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #9ca3af;
+  font-style: italic;
+  margin-top: 0.3em;
+  margin-left: 0;
+  letter-spacing: 0.02em;
 }
 #menu-outer nav#menu-inner a {
   color: #394867;
@@ -193,6 +204,13 @@ div#content-outer div#content-inner div#paginator span {
   line-height: 1.7;
   max-width: 600px;
 }
+#recent-posts .post-item .post-meta-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 1em;
+}
 #recent-posts .post-item time {
   color: #718096;
   font-size: 0.9em;
@@ -200,7 +218,31 @@ div#content-outer div#content-inner div#paginator span {
   padding: 0.3em 0.8em;
   background: rgba(57,72,103,0.05);
   border-radius: 6px;
-  margin-top: 1em;
+  margin: 0;
+}
+#recent-posts .post-item .post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 0;
+}
+#recent-posts .post-item .post-tags a.post-tag,
+#recent-posts .post-item .post-tags a.post-tag-link {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  color: #718096;
+  background: rgba(57,72,103,0.05);
+  border-radius: 6px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+}
+#recent-posts .post-item .post-tags a.post-tag:hover,
+#recent-posts .post-item .post-tags a.post-tag-link:hover {
+  background: rgba(57,72,103,0.12);
+  color: #394867;
 }
 div#bottom-inner {
   margin-top: 8em;
@@ -1144,6 +1186,22 @@ pre[class*='language-'] pre > code.highlight {
     display: flex;
     align-items: center;
     text-align: left;
+  }
+  #recent-posts .post-item .post-meta-info {
+    gap: 0.4em;
+    margin-top: 0.8em;
+  }
+  #recent-posts .post-item time {
+    font-size: 0.85em;
+    padding: 0.25em 0.6em;
+  }
+  #recent-posts .post-item .post-tags {
+    gap: 0.4em;
+  }
+  #recent-posts .post-item .post-tags a.post-tag,
+  #recent-posts .post-item .post-tags a.post-tag-link {
+    font-size: 0.85em;
+    padding: 0.25em 0.6em;
   }
   .avatar-container {
     margin-left: 0;
