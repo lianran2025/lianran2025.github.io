@@ -1270,10 +1270,12 @@ pre[class*='language-'] pre > code.highlight {
   #recent-posts .post-item {
     padding: 0;
     overflow: hidden;
+    background: linear-gradient(145deg, #fff, #f8f9fa) !important;
   }
   #recent-posts .post-item .post-content-wrapper {
     flex-direction: column;
     gap: 0;
+    background: transparent !important;
   }
   #recent-posts .post-item .post-text-content {
     padding: 1.2em;
@@ -1292,7 +1294,7 @@ pre[class*='language-'] pre > code.highlight {
   }
   #recent-posts .post-item .post-thumbnail {
     width: calc(100% - 2.4em) !important;
-    height: 180px !important;
+    height: 220px !important;
     align-self: center !important;
     margin: 0 auto 1em auto !important;
     border-radius: 8px !important;
@@ -1303,15 +1305,18 @@ pre[class*='language-'] pre > code.highlight {
     visibility: visible !important;
     opacity: 1 !important;
     background: transparent !important;
-    min-height: 180px !important;
-    max-height: 180px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+    border: none !important;
   }
   #recent-posts .post-item .post-thumbnail img,
   #recent-posts .post-item .post-thumbnail video {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -1321,11 +1326,15 @@ pre[class*='language-'] pre > code.highlight {
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   #recent-posts .post-item .post-thumbnail .video-thumbnail-img {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -1335,6 +1344,8 @@ pre[class*='language-'] pre > code.highlight {
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   #recent-posts .post-item .post-thumbnail .video-badge {
     width: 40px !important;
@@ -1352,6 +1363,7 @@ pre[class*='language-'] pre > code.highlight {
     flex-wrap: wrap;
     gap: 0.5em;
     padding: 0.8em 1.2em;
+    padding-bottom: 1.2em;
     background: rgba(57,72,103,0.02);
     border-top: 1px solid rgba(57,72,103,0.1);
     order: 3;
@@ -1375,7 +1387,9 @@ pre[class*='language-'] pre > code.highlight {
     display: flex;
     gap: 0.5em;
     margin-top: 0.8em;
+    margin-bottom: 1.2em;
     padding-top: 0.8em;
+    padding-bottom: 0;
     border-top: 1px solid rgba(57,72,103,0.1);
   }
   #recent-posts .post-item time {
